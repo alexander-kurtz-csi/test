@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> Mensch ärgere dich nicht</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="game.css">        
+    </head>
+    <body>
+        <header>
+            Mensch ärgere dich nicht
+        </header>
+        <main style="width: 100%">
+
+            <section id="board">
+                <div class="maingrid">
+
+                </div>
+            </section>
+            
+            <aside id="sidebar">
+
+                <section id="select_players">
+                    Anzahl der Spieler :
+                    <input type="number" min="1" max="4" id="players" />
+                    <button class="fn_game_start">Spiel Starten</button>
+                    <output id="next_activity"></output>
+                </section>
+                
+                <section id="player_info">
+                    Aktueller spieler :<br>
+                    <output id="actual_player_number"></output>
+                </section>
+                
+                <section id="dice">
+                    Würfelergebniss:<br>
+                  <!--  <img class="fn_dice_role" src="http://dobbelsteen.virtuworld.net/img/6c.gif" alt="6" width="64"/><br> -->
+                    <output id="dice_number"></output>
+                    <br>
+                    <button class="fn_dice_role">Würfeln</button>
+                </section>
+            </aside>
+
+            <section class="clr" id="temp">
+                
+            </section>
+            
+        </main>
+        <footer>
+            (c) XTP
+        </footer>
+        <!-- <script type="text/javascript" no-src="https://cdn.jsdelivr.net/jquery/3.0.0-alpha1/jquery.min.js"></script> -->
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="game.js"></script>
+
+    </body>
+</html>
